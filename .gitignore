@@ -1,0 +1,4 @@
+# Untrack folders
+.vs/
+OktaSampleConnections/bin/
+OktaSampleConnections/obj/
