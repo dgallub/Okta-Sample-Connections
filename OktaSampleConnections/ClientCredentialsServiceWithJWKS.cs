@@ -22,7 +22,7 @@ namespace OktaSampleConnections
             // Initialize Okta Configuration Variables
             var domain = "https://dev-03869058.okta.com/";
             var clientId = "0oa1x23sreyLMNBjq5d7";
-            var scopes = new List<string> { "okta.groups.manage", "okta.users.manage" };
+            var scopes = new List<string> { "okta.groups.read", "okta.users.read" };
             var dict = GetLocalFile("jwks.json");
 
             // Create OktaClient
