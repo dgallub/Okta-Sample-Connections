@@ -76,7 +76,7 @@ namespace OktaSampleConnections
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30.00));
 
             driver.Navigate().GoToUrl(authUri);
-            wait.Until(driver1 => (driver.FindElement(By.Name("username")) != null));
+            wait.Until(driver1 => (driver.FindElements(By.Name("username")).Count > 0));
 
             var usernameElement = driver.FindElement(By.Name("username"));
             var passwordElement = driver.FindElement(By.Name("password"));
